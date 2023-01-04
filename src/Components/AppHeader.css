@@ -1,0 +1,65 @@
+.appHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.appHeader h1 {
+    width: 100%;
+    text-align: center;
+    color: gray;
+}
+.appHeader .add_delete {
+    display: flex;
+    gap: 10px;
+}
+
+.appHeader .buttons {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.appHeader .buttons label {
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+.appHeader .buttons .select {
+    background-color: gray;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    color: lightgray;
+}
+
+@media (max-width:750px) {
+    .appHeader h1 {
+        font-size: 1.1rem;
+    }
+
+    .appHeader .buttons  button {
+        padding: 5px 10px;
+        min-width: 75px;
+        font-size: 0.8rem;
+       
+    }
+
+    .appHeader .buttons label {
+        font-size: 1rem;
+    }
+
+    .appHeader .buttons .select {
+        padding: 7px 10px;
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width:620px) {
+    .appHeader .buttons  button {
+        padding: 3px 7px;
+        min-width: 40px;
+        font-size: 0.7rem;
+    }
+
+}
